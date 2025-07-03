@@ -1,0 +1,50 @@
+{
+  "name": "proton-drive-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Proton Drive - enables AI assistants to access your Proton Drive files",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "proton-drive-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "npm run test:connection",
+    "test:connection": "node dist/test-connection.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "proton-drive",
+    "claude",
+    "cursor",
+    "ai",
+    "filesystem"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anyrxo/proton-drive-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
