@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server that enables AI assistants like Claude Desktop, Cursor, and other MCP-compatible clients to interact with your Proton Drive files.
 
+<a href="https://glama.ai/mcp/servers/@anyrxo/proton-drive-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@anyrxo/proton-drive-mcp/badge" alt="Proton Drive MCP server" />
+</a>
+
 ## ✨ Features
 
 - 📁 **List files and folders** in your Proton Drive
